@@ -1,37 +1,25 @@
 {
-  "name": "y",
+  "name": "webpack_example",
   "version": "1.0.0",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "start": "webpack serve --hot --open",
+    "build": "webpack -c webpack.config.js",
+    "build-prod": "webpack -c webpack.config.prod.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.20.5",
-    "@babel/preset-env": "^7.20.2",
-    "babel-loader": "^9.1.0",
-    "css-loader": "^6.7.2",
-    "mini-css-extract-plugin": "^2.7.0",
-    "node-sass": "^8.0.0",
-    "sass-loader": "^13.2.0",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.0"
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.6",
+    "node-sass": "^7.0.1",
+    "sass": "^1.46.0",
+    "sass-loader": "^12.4.0",
+    "webpack": "^5.64.3",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KanoplichAndrey/test-task.git"
-  },
-  "bugs": {
-    "url": "https://github.com/KanoplichAndrey/test-task/issues"
-  },
-  "homepage": "https://github.com/KanoplichAndrey/test-task#readme",
-  "description": "",
-  "dependencies": {
-    "build": "^0.1.4",
-    "npm": "^9.1.2",
-    "run": "^1.4.0"
-  }
+  "dependencies": {}
 }

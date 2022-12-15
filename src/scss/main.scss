@@ -1,0 +1,130 @@
+  
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+  margin-top: 100px;
+  display: flex;
+  background: url('../../img/bmw.jpg') no-repeat center;
+  background-size: cover;
+  height: 200px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+    img{
+      width: 800px;
+      height: 200px;
+    }
+    .form{
+        display: flex;
+        mix-blend-mode: hard-light;
+        
+    }
+
+    .name{
+        // clip-path: polygon(24% 9%, 100% 9%, 81% 100%, 0% 100%);
+        clip-path: polygon(23% 0%, 100% 0%, 82% 247%, 16% 100%);
+        border: solid 1px white;
+        outline: none;
+        padding-left: 159px;
+        font-family: "Times New Roman" ;
+        font-weight: 400;
+        font-size: 19px;
+        background: transparent;
+        font-style: normal;
+        background: #e7e7e7;
+        width: 700px;
+        height: 50px;
+
+    }
+
+    .submit{
+        // clip-path: polygon(32% 14%, 100% 14%, 65% 100%, -2% 100%);
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        margin-left: -203px;
+        background: red;
+        color: white;
+        font-family: "Times New Roman" ;
+        font-weight: 400;
+        font-size: 19px;
+        font-style: normal;
+        border: solid 1px white;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .fa{
+      position: relative;
+    }
+    .fa-truck:before {
+      left: -169px;
+      content: "\f0d1";
+      position: absolute;
+      top: 17px;
+      color: white;
+  }
+}
+
+.container {
+    padding: 0 15px;
+  }
+  
+  
+  @media (min-width: 575.98px) {
+    .container {
+      padding: 0 calc(50% - 270px);
+    }
+  }
+  
+  @media (min-width: 767.98px) {
+    .container {
+      padding: 0 calc(50% - 360px);
+    }
+  }
+  
+  @media (min-width: 991.98px) {
+    .container {
+      padding: 0 calc(50% - 480px);
+    }
+  }
+  
+  @media (min-width: 1199.98px) {
+    .container {
+      padding: 0 calc(50% - 600px);
+    }
+  }
+  
+  @media (max-width:760px) {
+    .container {
+
+    .name{
+        clip-path:none;
+        padding-left: 20px;
+        max-width: 100vh;
+        margin-right: 1px;
+    }    
+    
+
+    .submit{
+
+        clip-path:none;
+        margin-left: 0px;
+        
+    }
+
+    
+  }
+}
