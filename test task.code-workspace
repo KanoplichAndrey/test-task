@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"name": "test task",
+		"path": "."
+	}
+],
+  "settings": {
+    "git.ignoreLimitWarning": true
+  }
+}
