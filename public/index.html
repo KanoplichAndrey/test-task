@@ -10,16 +10,15 @@
 <body>
     <div class="container" >
         <form  id="info" name="info" novalidate class="form">
-            <input type="number" name="name" placeholder="Ваш номер...." class="name"> 
+            <input type="text" inputmode="numeric" pattern="[0-9]*" name="name" placeholder="Ваш номер...." class="name"> 
             <div class="div">
             <input type="submit" name="submit" value="ЗАКАЗАТЬ" class="submit">
             </div>
             <i class="fa fa-truck" aria-hidden="true"></i>
         </form>
         <p id="numberError"></p>
-    
-    </div>
 
+    </div>
     <script src='./bandle.js'></script>
 </body>
 
